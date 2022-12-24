@@ -9,7 +9,9 @@ A sample node js api for some hospital managment that help to add new patient da
 
 `git clone https://github.com/zowe/sample-node-api`
 cd sample-node-api
+
 npm install
+
 npm start
 
 Open your local browser and verify the sample-node-api is working by accessing:     
