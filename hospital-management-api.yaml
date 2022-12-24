@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Psychiatrist Details API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/psychiatrists:
+    get:
+      summary: Returns the details of all the psychiatrists, their count along with IDs and patient details for the specified hospital.
+      parameters:
+        - in: query
+          name: hospitalId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hospitalName:
+                    type: string
+                  psychiatristCount:
+                    type: integer
+                  TotalpatientCount:
+                    type: integer
+                  psychiatristDetails:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        name:
+                          type: string
+                        patientCount:
+                          type: integer
+        '404':
+          description: Hospital with the specified ID is not found in the database
+        '500':
+          description: An error occurred while processing the request
