@@ -44,5 +44,25 @@ This API allows users to fetch details of psychiatrists and their patients for a
 - `404 Not Found`: Hospital with the specified ID is not found in the database
 - `500 Internal Server Error`: An error occurred while processing the request
 
+## Example
+
+GET /api/psychiatrists
+
+{
+"hospitalName": "City Hospital",
+"psychiatristCount": 3,
+"TotalpatientCount": 20,
+"psychiatristDetails": [
+{
+"id": 1,
+"name": "Dr. John Smith",
+"patientCount": 8
+},
+{
+"id": 2,
+"name": "Dr. Jane Doe",
+"patientCount": 5
+}
+}
 
 
