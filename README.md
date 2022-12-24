@@ -51,8 +51,8 @@ GET /api/psychiatrists
 
 {
 "hospitalName": "City Hospital",
-"psychiatristCount": 3,
-"TotalpatientCount": 20,
+"psychiatristCount": 2,
+"TotalpatientCount": 13,
 "psychiatristDetails": [
    {
       "id": 1,
