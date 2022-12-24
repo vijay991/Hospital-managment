@@ -47,22 +47,23 @@ This API allows users to fetch details of psychiatrists and their patients for a
 ## Example
 
 GET /api/psychiatrists
+```
 
 {
 "hospitalName": "City Hospital",
 "psychiatristCount": 3,
 "TotalpatientCount": 20,
 "psychiatristDetails": [
-{
-"id": 1,
-"name": "Dr. John Smith",
-"patientCount": 8
-},
-{
-"id": 2,
-"name": "Dr. Jane Doe",
-"patientCount": 5
-}
-}
-
+   {
+      "id": 1,
+      "name": "Dr. John Smith",
+      "patientCount": 8
+   },
+   {
+      "id": 2,
+      "name": "Dr. Jane Doe",
+      "patientCount": 5
+   }
+]
+```
 
