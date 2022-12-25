@@ -1,4 +1,4 @@
-# Psychiatrist Details API
+# Hospital-managment
 
 This API allows users to fetch details of psychiatrists and their patients for a hospital. It is built using [Express.js](https://expressjs.com/), a popular web application framework for Node.js.
 
