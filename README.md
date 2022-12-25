@@ -27,7 +27,7 @@ This API allows users to fetch details of psychiatrists and their patients for a
 
 - `GET /api/psychiatrists`: Returns the details of all the psychiatrists, their count along with IDs and patient details for the specified hospital.
 
-   -## Parameters
+   - ## Parameters
 
    - `hospitalId`: ID of the hospital (required)
 
