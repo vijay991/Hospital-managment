@@ -5,7 +5,7 @@ const Hospital = require('../models/hospital');
 const errorHandler = require('../middleware/error-handoler');
 
 // Fetch all the psychiatrists, their count along with IDs and patient details for a hospital
-router.get('/psychiatrists', (req, res) => {
+router.post('/psychiatrists', (req, res) => {
   const hospitalId = req.body.hospitalId;
 
   Hospital.getHospitalById(hospitalId, (error, result,next) => {
@@ -13,7 +13,7 @@ router.get('/psychiatrists', (req, res) => {
       return errorHandler(error, req, res, next);
     }
     if (!result) {
-      const err = new Error('Hospital not found with given id');
+      const err = new Error(`Hospital not found with given id-${hospitalId}`);
       err.status = 404;
       return errorHandler(err, req, res, next);
     }
