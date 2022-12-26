@@ -21,6 +21,7 @@ This API allows users to fetch details of psychiatrists and their patients for a
 3. open db.js file from Hospital-managment/models folder and add your mysql database details
 4. Start the API server:
    `npm start`
+   Server will run on localhost:3000
    
 
 ## Endpoints
@@ -66,4 +67,19 @@ This API allows users to fetch details of psychiatrists and their patients for a
       }
    ]
    ```
+- `GET /api/patients`: register new patient in system.
+   - ## RequestBody
+   - `name`:
+   - `address`:
+   - `email`:
+   - `phone`:
+   - `password`:
+   - `patientPhoto`:
 
+   ## Responses
+   - `200 Success`:
+      - Patient registered successfully
+   - `400`:
+      - Invalid request
+   - `500`:
+      - 	An error occurred while processing the request
