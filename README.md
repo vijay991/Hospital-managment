@@ -78,8 +78,20 @@ This API allows users to fetch details of psychiatrists and their patients for a
 
    ## Responses
    - `200 Success`:
-      - Patient registered successfully
+      - Patient registered successfully.
    - `400`:
-      - Invalid request
+      - Invalid request.
    - `500`:
-      - 	An error occurred while processing the request
+      - An error occurred while processing the request.
+
+## Library/Packages
+   - ## bcrypt
+   - bcrypt is a password hashing library that is widely used for securely storing hashed passwords in a database. It includes features such as salting to protect against dictionary attacks and can be used for authentication, password reset functionality, and as an additional layer of security in combination with other authentication methods.
+   - ## body-parser
+   - The body-parser is a middleware that is used to parse the request body of an HTTP request. It is often used in web applications to process incoming request data and make it available to the application in a usable format.
+   - ## express-validator
+   - express-validator is a middleware that is used to validate and sanitize data in an Express.js application. It provides a set of validation and sanitization functions that can be used to check the correctness and security of data before it is processed by the application
+  
+   
+
+
