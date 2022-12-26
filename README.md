@@ -90,7 +90,11 @@ This API allows users to fetch details of psychiatrists and their patients for a
    - ## body-parser
    - The body-parser is a middleware that is used to parse the request body of an HTTP request. It is often used in web applications to process incoming request data and make it available to the application in a usable format.
    - ## express-validator
-   - express-validator is a middleware that is used to validate and sanitize data in an Express.js application. It provides a set of validation and sanitization functions that can be used to check the correctness and security of data before it is processed by the application
+   - express-validator is a middleware that is used to validate and sanitize data in an Express.js application. It provides a set of validation and sanitization functions that can be used to check the correctness and security of data before it is processed by the application.
+   - ## multer
+   - Multer is a middleware that is used to handle HTTP requests that contain enctype "multipart/form-data," which is used for file uploads. It is designed to work with the Express.js framework and allows you to handle file uploads in your Node.js application.
+   - ## nodemon
+   - Nodemon is a utility that automatically restarts a Node.js application when file changes are detected. It is often used during development to save time by eliminating the need to manually stop and start the server each time a change is made to the code.
   
    
 
