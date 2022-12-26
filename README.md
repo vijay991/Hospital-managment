@@ -26,9 +26,9 @@ This API allows users to fetch details of psychiatrists and their patients for a
 
 ## Endpoints
 
-- `GET /api/psychiatrists`: Returns the details of all the psychiatrists, their count along with IDs and patient details for the specified hospital.
+- `POST /api/psychiatrists`: Returns the details of all the psychiatrists, their count along with IDs and patient details for the specified hospital.
 
-   - ## Parameters
+   - ## RequestBody
 
    - `hospitalId`: ID of the hospital (required)
 
@@ -47,7 +47,7 @@ This API allows users to fetch details of psychiatrists and their patients for a
 
    ## Example
 
-   GET /api/psychiatrists
+   POST /api/psychiatrists
    ```
 
    {
@@ -67,7 +67,7 @@ This API allows users to fetch details of psychiatrists and their patients for a
       }
    ]
    ```
-- `GET /api/patients`: register new patient in system.
+- `POST /api/patients`: register new patient in system.
    - ## RequestBody
    - `name`:
    - `address`:
